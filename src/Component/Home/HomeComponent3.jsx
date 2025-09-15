@@ -33,16 +33,56 @@ const HomeComponent3 = () => {
           </div>
         </div>
 
-<div className=" card-row w-full flex justify-center gap-5  ">
+        <div className=" card-row w-full flex justify-center gap-10  ">
+          
+          <div className="">
+            <PacegeCard
+            coverPhoto={"photos/poster.jpg"}
+            title={"Super Saver Umrah Package"}
+            PriceWithFood={"৳1,28,000 included Food"}
+            PriceWithOutFood={"৳1,20,000 Food not included"}
+            makkahHotel={"Standard Hotel | Distance 700-800m"}
+            HotelMadinah={"Standard Hotel | Distance 700-800m"}
+            FliteUp={"Transit"}
+            FlightDown={"Transit"}
+            food={"Included/Excluded"}
+            SpecialServices={"Ziyara + Guide + Da'e"}
+          />
+          </div>
+          
+          <div className="">
+            <PacegeCard
+            coverPhoto={"photos/poster.jpg"}
+            title={"Super Saver Umrah Package"}
+            PriceWithFood={"৳1,28,000 included Food"}
+            PriceWithOutFood={"৳1,20,000 Food not included"}
+            makkahHotel={"Standard Hotel | Distance 700-800m"}
+            HotelMadinah={"Standard Hotel | Distance 700-800m"}
+            FliteUp={"Transit"}
+            FlightDown={"Transit"}
+            food={"Included/Excluded"}
+            SpecialServices={"Ziyara + Guide + Da'e"}
+          />
+          </div>
+          
+          <div className="">
+            <PacegeCard
+            coverPhoto={"photos/poster.jpg"}
+            title={"Super Saver Umrah Package"}
+            PriceWithFood={"৳1,28,000 included Food"}
+            PriceWithOutFood={"৳1,20,000 Food not included"}
+            makkahHotel={"Standard Hotel | Distance 700-800m"}
+            HotelMadinah={"Standard Hotel | Distance 700-800m"}
+            FliteUp={"Transit"}
+            FlightDown={"Transit"}
+            food={"Included/Excluded"}
+            SpecialServices={"Ziyara + Guide + Da'e"}
+          />
+          </div>
+          
 
-  <PacegeCard/>
-  <PacegeCard/>
-  <PacegeCard/>
-
-</div>
-      
-
-
+          
+        </div>
       </div>
     </>
   );
