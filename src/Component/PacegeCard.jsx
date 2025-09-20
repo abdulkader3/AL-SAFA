@@ -1,7 +1,10 @@
 import React from "react";
-import { GiPriceTag } from "react-icons/gi";
+import { GiAirplaneDeparture, GiPriceTag } from "react-icons/gi";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import Button from "./Button/Button.jsx";
+import { WiSunrise } from "react-icons/wi";
+import { PiForkKnifeFill } from "react-icons/pi";
+import { IoAirplaneSharp } from "react-icons/io5";
 
 const PacegeCard = ({
   coverPhoto,
@@ -13,7 +16,13 @@ const PacegeCard = ({
   FliteUp,
   FlightDown,
   food,
-  SpecialServices
+  SpecialServices,
+  Package_1,
+  Package_2,
+  Package_3,
+  Package_4,
+  Package_5,
+  button_tru
 
 }) => {
   return (
@@ -28,55 +37,126 @@ const PacegeCard = ({
           {title}
         </p>
 
-        <div className="w-full h-[55px] bg-[#ffffff3e] rounded-sm flex gap-2 items-center px-2 font-semibold ">
+        {
+          PriceWithFood &&
+          <div className="w-full h-fit py-2 bg-[#ffffff3e] rounded-sm flex gap-2 items-center px-2 font-semibold ">
           <GiPriceTag /> <p className="font-semibold w-[165px] text-left">Price :</p>
           <p className="ml-2"> {PriceWithFood} </p>
         </div>
+        }
 
-        <div className="w-full h-[55px] rounded-sm flex gap-2 items-center px-2 font-semibold mt-5 border border-white ">
+        {
+          PriceWithOutFood && 
+          <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3  ">
           <GiPriceTag /> <p className  ="font-semibold w-[165px] text-left">Price :</p>
           <p className="ml-2"> {PriceWithOutFood} </p>
         </div>
+        }
 
-        <div className="w-full h-[55px] rounded-sm flex gap-2 items-center px-2 font-semibold mt-5 bg-[#ffffff3e] ">
+        {/* Package */}
+
+        {Package_1 && 
+        <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3 bg-[#ffffff3e] ">
           <SiHomeassistantcommunitystore />{" "}
-          <p className="font-semibold w-[165px] text-left ">Hotel Makkah :</p>
+          <p className="font-semibold w-[165px] text-left ">Package 1 :</p>
+          <p className="ml-2"> {Package_1} </p>
+        </div>
+        }
+
+         {Package_2 &&
+         <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3 bg-[#ffffff3e] ">
+          <SiHomeassistantcommunitystore />{" "}
+          <p className="font-semibold w-[165px] text-left ">Package 2 :</p>
+          <p className="ml-2"> {Package_2} </p>
+        </div>
+         } 
+        
+         {Package_3 &&
+         <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3 bg-[#ffffff3e] ">
+          <SiHomeassistantcommunitystore />{" "}
+          <p className="font-semibold w-[165px] text-left ">Package 3 :</p>
+          <p className="ml-2"> {Package_3} </p>
+        </div>
+         }
+        
+         {Package_4 &&
+         <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3 bg-[#ffffff3e] ">
+          <SiHomeassistantcommunitystore />{" "}
+          <p className="font-semibold w-[165px] text-left ">Package 4 :</p>
+          <p className="ml-2"> {Package_4} </p>
+        </div>
+         }
+        
+         {Package_5 &&
+         <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3 bg-[#ffffff3e] ">
+          <SiHomeassistantcommunitystore />{" "}
+          <p className="font-semibold w-[165px] text-left ">Package 5 :</p>
+          <p className="ml-2"> {Package_5} </p>
+        </div>
+         }
+
+        {/* package */}
+
+        {
+          makkahHotel &&
+          <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3 bg-[#ffffff3e] ">
+          <SiHomeassistantcommunitystore />{" "}
+          <p className="font-semibold w-[165px] text-left shrink-0">Hotel Makkah :</p>
           <p className="ml-2"> {makkahHotel} </p>
         </div>
+        }
 
-        <div className="w-full h-[55px] rounded-sm flex gap-2 items-center px-2 font-semibold mt-5 border border-white ">
+        {
+          HotelMadinah &&
+          <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3  ">
           <SiHomeassistantcommunitystore />{" "}
-          <p className="font-semibold w-[165px] text-left ">Hotel Madinah :</p>
+          <p className="font-semibold w-[165px] text-left shrink-0 ">Hotel Madinah :</p>
           <p className="ml-2"> {HotelMadinah} </p>
         </div>
+        }
 
-        <div className="w-full h-[55px] rounded-sm flex gap-2 items-center px-2 font-semibold mt-5 bg-[#ffffff3e] ">
-          <SiHomeassistantcommunitystore />{" "}
+        {
+          FliteUp && 
+          <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3 bg-[#ffffff3e] ">
+          <IoAirplaneSharp  className="rotate-330" />{" "}
           <p className="font-semibold w-[165px] text-left ">Flights Up :</p>
           <p className="ml-2"> {FliteUp} </p>
         </div>
+        }
 
-        <div className="w-full h-[55px] rounded-sm flex gap-2 items-center px-2 font-semibold mt-5 border border-white ">
-          <SiHomeassistantcommunitystore />{" "}
+        {
+          FlightDown &&
+          <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3  ">
+          <IoAirplaneSharp className=" rotate-20" />{" "}
           <p className="font-semibold w-[165px] text-left ">Flights Down :</p>
           <p className="ml-2"> {FlightDown} </p>
         </div>
+        }
 
-        <div className="w-full h-[55px] rounded-sm flex gap-2 items-center px-2 font-semibold mt-5 bg-[#ffffff3e] ">
-          <SiHomeassistantcommunitystore />{" "}
+        {
+          food &&
+          <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3 bg-[#ffffff3e] ">
+          <PiForkKnifeFill />{" "}
           <p className="font-semibold w-[165px] text-left ">Food :</p>
           <p className="ml-2"> {food} </p>
         </div>
+        }
 
-        <div className="w-full h-[55px] rounded-sm flex gap-2 items-center px-2 font-semibold mt-5 border border-white ">
-          <SiHomeassistantcommunitystore />{" "}
+        {
+          SpecialServices &&
+          <div className="w-full h-fit py-2 rounded-sm flex gap-2 items-center px-2 font-semibold mt-3 ">
+          <WiSunrise />{" "}
           <p className="font-semibold w-[165px] text-left ">Special Services :</p>
           <p className="ml-2"> {SpecialServices} </p>
         </div>
+        }
 
-        <div className="button mt-[200px] ">
+        {
+          button_tru &&
+          <div className="button mt-10 ">
           <Button buttonText={"Buy Now"} buttonColor={"bg-[#cf8e00]"} />
         </div>
+        }
       </div>
     </>
   );

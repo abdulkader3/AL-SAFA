@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
+import { MdCall } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -26,24 +27,25 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='flex justify-between font-playfair items-center px-10 pb-8 pt-5 text-[20px] text-shadow-2xs hover:text-shadow-2xs font-medium'>
+      <nav className='flex justify-center gap-170 font-playfair items-center px-10 pb-8 pt-5 text-[20px] text-shadow-2xs hover:text-shadow-2xs font-medium'>
         <Link to="/" className="Logo w-[150px]">
           <img src="photos/logo.png" alt="logo" />
         </Link>
 
-        <ul className='flex gap-10 text-[18px] '>
+        {/* <ul className='flex gap-10 text-[18px] '>
           <li className='hover:text-green-600 active:scale-90 transition-all'><Link to="#"> Home </Link></li>
           <li className='hover:text-green-600 active:scale-90 transition-all'><Link to="#"> About </Link></li>
           <li className='hover:text-green-600 active:scale-90 transition-all'><Link to="#"> Blog </Link></li>
           <li className='hover:text-green-600 active:scale-90 transition-all'><Link to="#"> Contact </Link></li>
-        </ul>
+        </ul> */}
+
 
         <div className="contact flex gap-10 items-center w-fit h-fit justify-center relative">
           <button 
             onClick={handleCopyClick} 
-            className='hover:text-green-500 active:scale-95 transition-all'
+            className='hover:text-green-500 active:scale-95 transition-all flex items-center font-semibold gap-3'
           >
-            +8801813284367
+           <span> <MdCall/>  </span>  <span>+8801813284367</span>
           </button>
 
           <button className='mb-1' onClick={handleWhatsAppClick}>
