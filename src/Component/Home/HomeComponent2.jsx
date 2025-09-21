@@ -101,9 +101,9 @@ const HomeComponent2 = () => {
             </div>
           </div>
 
-          <div className="mt-10 flex justify-center lg:justify-start">
+          {/* <div className=" flex justify-center lg:justify-start">
             <Button buttonText={"Management Board"} />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
