@@ -4,28 +4,28 @@ import PacegeCard from "../PacegeCard.jsx";
 const HomeComponent3 = () => {
   return (
     <>
-      <div className="main w-full h-fit bg-linear-to-r from-[#5aa400cb] to-[#00711af2] px-20 ">
-        <div className="header flex flex-col ">
-          <div className="flex gap-5 ">
+      <div className="main w-full h-fit bg-gradient-to-r from-[#5aa400cb] to-[#00711af2] px-4 sm:px-8 lg:px-20">
+        <div className="header flex flex-col">
+          <div className="flex gap-3 sm:gap-5 justify-center lg:justify-start">
             <img
-              className="w-[80px] "
+              className="w-[60px] sm:w-[70px] lg:w-[80px]"
               src="photos/props-short.png"
               alt="props"
             />
             <img
-              className="w-[80px] "
+              className="w-[60px] sm:w-[70px] lg:w-[80px]"
               src="photos/props-short.png"
               alt="props"
             />
           </div>
 
-          <div className=" ml-[110px] mt-[-30px] ">
-            <h1 className="text-white text-[35px] font-playfair font-semibold ">
+          <div className="lg:ml-[110px] lg:mt-[-30px] text-center lg:text-left px-4 lg:px-0">
+            <h1 className="text-white text-[24px] sm:text-[28px] lg:text-[35px] font-playfair font-semibold mt-4 lg:mt-0">
               {" "}
               Available Umrah Packages from Bangladesh{" "}
             </h1>
 
-            <p className="text-[17px] text-white font-poppins mt-4 mb-10 ">
+            <p className="text-[14px] sm:text-[16px] lg:text-[17px] text-white font-poppins mt-4 mb-10 max-w-[95%] sm:max-w-[90%] lg:max-w-none mx-auto lg:mx-0 leading-relaxed">
               Plan your Umrah and Ziyarah. Our upcoming Umrah packages will
               encompass a range of options, including economy and premium
               packages, designed to accommodate various budgets and preferences.
@@ -33,9 +33,9 @@ const HomeComponent3 = () => {
           </div>
         </div>
 
-        <div className=" card-row w-full flex justify-center gap-10  ">
+        <div className="card-row w-full grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-10 justify-items-center px-4 lg:px-0">
           
-          <div className="">
+          <div className="w-full max-w-[400px]">
             <PacegeCard
             coverPhoto={"photos/poster.jpg"}
             title={"Super Saver Umrah Package"}
@@ -52,7 +52,7 @@ const HomeComponent3 = () => {
           />
           </div>
           
-          <div className="">
+          <div className="w-full max-w-[400px]">
             <PacegeCard
             coverPhoto={"photos/poster.jpg"}
             title={"Economy Umrah Package"}
@@ -73,7 +73,7 @@ const HomeComponent3 = () => {
           />
           </div>
           
-          <div className="">
+          <div className="w-full max-w-[400px]">
             <PacegeCard
             coverPhoto={"photos/poster.jpg"}
             title={"Standard Umrah Package"}
@@ -94,7 +94,7 @@ const HomeComponent3 = () => {
           
         </div>
 
-        <div className="last-props w-full flex justify-end ">
+        <div className="last-props w-full flex justify-center lg:justify-end px-4 lg:px-0 pt-8">
           <img className=" rotate-180" src="photos/star-icon.svg" alt="icon" />
         </div>
 

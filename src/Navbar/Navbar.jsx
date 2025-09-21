@@ -27,20 +27,23 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='flex justify-center gap-170 font-playfair items-center px-10 pb-8 pt-5 text-[20px] text-shadow-2xs hover:text-shadow-2xs font-medium'>
-        <Link to="/" className="Logo w-[150px]">
+      <nav className='flex justify-between font-playfair items-center px-10 pb-8 pt-5 text-[20px] text-shadow-2xs hover:text-shadow-2xs font-medium'>
+        <Link to="/" className="Logo w-[90px] md:w-[150px]">
           <img src="photos/logo.png" alt="logo" />
         </Link>
 
-        {/* <ul className='flex gap-10 text-[18px] '>
+        {/* <div className=" hidden md:hidden lg:block ">
+          <ul className='flex gap-10 text-[18px] '>
           <li className='hover:text-green-600 active:scale-90 transition-all'><Link to="#"> Home </Link></li>
           <li className='hover:text-green-600 active:scale-90 transition-all'><Link to="#"> About </Link></li>
           <li className='hover:text-green-600 active:scale-90 transition-all'><Link to="#"> Blog </Link></li>
           <li className='hover:text-green-600 active:scale-90 transition-all'><Link to="#"> Contact </Link></li>
-        </ul> */}
+        </ul>
+
+        </div> */}
 
 
-        <div className="contact flex gap-10 items-center w-fit h-fit justify-center relative">
+        <div className="contact flex gap-10 items-center w-fit h-fit justify-center relative text-[13px] md:text-[18px] ">
           <button 
             onClick={handleCopyClick} 
             className='hover:text-green-500 active:scale-95 transition-all flex items-center font-semibold gap-3'
@@ -49,7 +52,7 @@ const Navbar = () => {
           </button>
 
           <button className='mb-1' onClick={handleWhatsAppClick}>
-            <FaWhatsapp className='text-[30px] text-emerald-400 hover:text-black hover:scale-105 active:scale-90 transition-all' />
+            <FaWhatsapp className='text-[20px] md:text-[30px] text-emerald-400 hover:text-black hover:scale-105 active:scale-90 transition-all' />
           </button>
 
           {/* Copy success message with fade animation */}

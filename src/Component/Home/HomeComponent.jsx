@@ -13,15 +13,15 @@ const HomeComponent = () => {
 
   return (
     <>
-      <div className='main-row flex justify-center gap-20 bg-[#00000013] py-5 '>
+      <div className='main-row flex flex-col lg:flex-row justify-center gap-5 md:gap-10 lg:gap-20 bg-[#00000013] py-5 px-4'>
         <div
           data-aos="fade-up-right"
-          className="textRight text-white w-[50%] pl-30 bg-gray-600 font-playfair rounded-4xl"
+          className="textRight text-white py-5 md:py-0 w-full lg:w-[50%] px-4 md:px-8 lg:pl-30 bg-gray-600 font-playfair rounded-4xl"
         >
-          <p className='w-[570px] text-[50px] font-bold mt-40 mb-5'>
+          <p className='w-full max-w-[570px] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-bold mt-8 md:mt-20 lg:mt-40 mb-3 md:mb-5'>
             Find the best Umrah package from Bangladesh
           </p>
-          <p className='w-[570px] mb-16 text-[17px] font-poppins'>
+          <p className='w-full max-w-[570px] mb-8 md:mb-12 lg:mb-16 text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] font-poppins'>
             Discover all the amazing packages at exclusive rates with expert guides and Sharia consultants.
           </p>
 
@@ -30,9 +30,9 @@ const HomeComponent = () => {
 
         <div
           data-aos="fade-up-left"
-          className="BG w-[40%] rounded-4xl overflow-hidden"
+          className="BG w-full lg:w-[40%] rounded-4xl overflow-hidden"
         >
-          <img src="photos/BG.jpg" alt="" />
+          <img src="photos/BG.jpg" alt="" className="w-full h-auto object-cover" />
         </div>
       </div>
     </>
