@@ -25,7 +25,7 @@ const HomeComponent = () => {
             Discover all the amazing packages at exclusive rates with expert guides and Sharia consultants.
           </p>
 
-          <Button buttonText={"Plan Your Umra"} />
+          <Button buttonText={"Plan Your Umra"} path={"/plan"} />
         </div>
 
         <div

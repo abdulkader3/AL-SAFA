@@ -2,6 +2,7 @@ import React from 'react'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Home from './Page/Home.jsx'
 import Layout from './Layout/Layout.jsx'
+import Plan from './Component/Plan/Plan.jsx'
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Layout/>}>
 
         <Route index element={<Home/>}/>
+        <Route path="/plan" element={<Plan/>}/>
 
         
         </Route>

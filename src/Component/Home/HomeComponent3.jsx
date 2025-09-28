@@ -1,31 +1,31 @@
 import React from "react";
 import PacegeCard from "../PacegeCard.jsx";
 
-const HomeComponent3 = () => {
+const HomeComponent3 = ({Background,}) => {
   return (
     <>
-      <div className="main w-full h-fit bg-gradient-to-r from-[#5aa400cb] to-[#00711af2] px-4 sm:px-8 lg:px-20">
+      <div className={`main w-full h-fit ${Background? Background : "bg-gradient-to-r from-[#5aa400cb] to-[#00711af2]"} px-2 sm:px-4 md:px-8 lg:px-20 py-4 sm:py-6 lg:py-8`}>
         <div className="header flex flex-col">
-          <div className="flex gap-3 sm:gap-5 justify-center lg:justify-start">
+          <div className="flex gap-2 sm:gap-3 md:gap-5 justify-center lg:justify-start">
             <img
-              className="w-[60px] sm:w-[70px] lg:w-[80px]"
+              className="w-[50px] sm:w-[60px] md:w-[70px] lg:w-[80px]"
               src="photos/props-short.png"
               alt="props"
             />
             <img
-              className="w-[60px] sm:w-[70px] lg:w-[80px]"
+              className="w-[50px] sm:w-[60px] md:w-[70px] lg:w-[80px]"
               src="photos/props-short.png"
               alt="props"
             />
           </div>
 
-          <div className="lg:ml-[110px] lg:mt-[-30px] text-center lg:text-left px-4 lg:px-0">
-            <h1 className="text-white text-[24px] sm:text-[28px] lg:text-[35px] font-playfair font-semibold mt-4 lg:mt-0">
+          <div className="lg:ml-[110px] lg:mt-[-30px] text-center lg:text-left px-2 sm:px-4 lg:px-0">
+            <h1 className="text-white text-[20px] sm:text-[24px] md:text-[28px] lg:text-[35px] font-playfair font-semibold mt-3 sm:mt-4 lg:mt-0">
               {" "}
               Available Umrah Packages from Bangladesh{" "}
             </h1>
 
-            <p className="text-[14px] sm:text-[16px] lg:text-[17px] text-white font-poppins mt-4 mb-10 max-w-[95%] sm:max-w-[90%] lg:max-w-none mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[17px] text-white font-poppins mt-3 sm:mt-4 mb-6 sm:mb-8 lg:mb-10 max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-none mx-auto lg:mx-0 leading-relaxed">
               Plan your Umrah and Ziyarah. Our upcoming Umrah packages will
               encompass a range of options, including economy and premium
               packages, designed to accommodate various budgets and preferences.
@@ -33,7 +33,7 @@ const HomeComponent3 = () => {
           </div>
         </div>
 
-        <div className="card-row w-full grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-10 justify-items-center px-4 lg:px-0">
+        <div className="card-row w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-10 justify-items-center px-2 sm:px-4 lg:px-0">
           
           <div className="w-full max-w-[400px]">
             <PacegeCard
@@ -94,8 +94,8 @@ const HomeComponent3 = () => {
           
         </div>
 
-        <div className="last-props w-full flex justify-center lg:justify-end px-4 lg:px-0 pt-8">
-          <img className=" rotate-180" src="photos/star-icon.svg" alt="icon" />
+        <div className="last-props w-full flex justify-center lg:justify-end px-2 sm:px-4 lg:px-0 pt-6 sm:pt-8 pb-2 sm:pb-4">
+          <img className="rotate-180 w-4 sm:w-5 lg:w-6" src="photos/star-icon.svg" alt="icon" />
         </div>
 
 
