@@ -44,7 +44,7 @@ const HomeComponent5 = () => {
       <div className="service-container bg-white rounded-xl md:rounded-[30px] p-4 md:p-6 lg:p-10 w-full max-w-sm md:max-w-md lg:max-w-2xl mx-auto md:mx-0 md:ml-8 lg:ml-12 shadow-lg md:shadow-2xl relative z-10 mt-52 md:mt-0">
       
         <h2 className="text-[#2d5a27] text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-5 lg:mb-6 text-left font-playfair">
-          Hijaz Service Area
+          AL SAFA International
         </h2>
         
         <p className="text-[#2d5a27] text-sm md:text-base lg:text-lg leading-relaxed mb-6 md:mb-8 font-poppins">

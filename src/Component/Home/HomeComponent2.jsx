@@ -35,7 +35,7 @@ const HomeComponent2 = () => {
         <div data-aos="fade-up-left" className="right order-1 lg:order-2 text-center lg:text-left">
           <div className="flex flex-col lg:flex-row items-center lg:items-start">
             <p className="text-[28px] sm:text-[35px] lg:text-[45px] mt-8 lg:mt-[120px] w-full max-w-[90%] sm:max-w-[80%] lg:w-[520px] font-semibold leading-tight">
-              Hijaz Hajj Umrah Ltd. Best Agency in Bangladesh
+              AL SAFA International. Best Agency in Bangladesh
             </p>
             <div className="img-props1 w-[60px] sm:w-[70px] lg:w-[90px] mt-4 lg:mt-0 hidden lg:block">
               {" "}
@@ -44,7 +44,7 @@ const HomeComponent2 = () => {
           </div>
 
           <p className="text-[16px] sm:text-[18px] lg:text-[19px] w-full max-w-[95%] sm:max-w-[90%] lg:w-[640px] mt-5 mb-10 font-poppins mx-auto lg:mx-0 leading-relaxed">
-            Hijaz Hajj Umrah Ltd. in Bangladesh was established in January 2023.
+            AL SAFA International. in Bangladesh was established in January 1998.
             Aiming to provide a comprehensive and all-in-one experience for
             individuals undertaking the holy pilgrimage of Hajj and Umrah
             from any city in Bangladesh.
