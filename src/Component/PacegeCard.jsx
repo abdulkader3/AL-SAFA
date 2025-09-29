@@ -27,7 +27,7 @@ const PacegeCard = ({
 }) => {
   return (
     <>
-      <div className="cardOfOffer w-full max-w-[400px] h-fit bg-[#ffffff36] shadow-2xl rounded-2xl pt-2 sm:pt-3 pb-6 sm:pb-8 lg:pb-10 px-2 sm:px-3 lg:px-4 text-center mx-auto">
+      <div className="cardOfOffer w-full max-w-[400px] h-fit bg-[#ffffff36] rounded-2xl pt-2 sm:pt-3 pb-6 sm:pb-8 lg:pb-10 px-2 sm:px-3 lg:px-4 text-center mx-auto shadow-[0px_0px_5px_5px_rgba(0,_0,_0,_0.1)]">
         <div className="poster w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-[300px] overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-4xl shadow-2xl">
           {" "}
           <img src={coverPhoto} alt="poster" className="w-full h-full object-cover" />{" "}

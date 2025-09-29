@@ -94,9 +94,9 @@ const HomeComponent3 = ({Background,}) => {
           
         </div>
 
-        <div className="last-props w-full flex justify-center lg:justify-end px-2 sm:px-4 lg:px-0 pt-6 sm:pt-8 pb-2 sm:pb-4">
+        {/* <div className="last-props w-full flex justify-center lg:justify-end px-2 sm:px-4 lg:px-0 pt-6 sm:pt-8 pb-2 sm:pb-4">
           <img className="rotate-180 w-4 sm:w-5 lg:w-6" src="photos/star-icon.svg" alt="icon" />
-        </div>
+        </div> */}
 
 
 
