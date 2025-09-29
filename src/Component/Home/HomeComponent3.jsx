@@ -39,8 +39,8 @@ const HomeComponent3 = ({Background,}) => {
             <PacegeCard
             coverPhoto={"photos/poster.jpg"}
             title={"Super Saver Umrah Package"}
-            PriceWithFood={"৳1,28,000 included Food"}
-            PriceWithOutFood={"৳1,20,000 Food not included"}
+            PriceWithFood={"৳1,33,000 included Food"}
+            PriceWithOutFood={"৳1,25,000 Food not included"}
             Package_1={" 18 Sep-30 Sep (13 Days)"}
             makkahHotel={"Standard Hotel | Distance 700-800m"}
             HotelMadinah={"Standard Hotel | Distance 700-800m"}
@@ -56,8 +56,8 @@ const HomeComponent3 = ({Background,}) => {
             <PacegeCard
             coverPhoto={"photos/poster.jpg"}
             title={"Economy Umrah Package"}
-            PriceWithFood={" ৳1,48,000 included Food"}
-            PriceWithOutFood={"৳1,40,000 Food not included"}
+            PriceWithFood={" ৳1,53,000 included Food"}
+            PriceWithOutFood={"৳1,45,000 Food not included"}
             Package_1={"08 Oct-20 Oct (13 Days)"}
             Package_2={"27 Nov-09 Dec (13 Days) "}
             Package_3={"18 Nov-30 Nov (13 Days) "}
@@ -77,8 +77,8 @@ const HomeComponent3 = ({Background,}) => {
             <PacegeCard
             coverPhoto={"photos/poster.jpg"}
             title={"Standard Umrah Package"}
-            PriceWithFood={" ৳1,38,000 included Food"}
-            PriceWithOutFood={" ৳1,30,000 Food not included"}
+            PriceWithFood={" ৳1,43,000 included Food"}
+            PriceWithOutFood={" ৳1,35,000 Food not included"}
             Package_1={"25 Sep-07 Oct (13 Days)"}
             makkahHotel={" Adnan Matouk al Amiri/Equivalent Hotel | Distance 650-750m."}
             HotelMadinah={" Adnan Matouk al Amiri/Equivalent Hotel | Distance 650-750m."}
