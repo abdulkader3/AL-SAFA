@@ -154,7 +154,40 @@ const PacegeCard = ({
         {
           button_tru &&
           <div className="button mt-4 sm:mt-6 lg:mt-8 px-2">
-          <Button buttonText={"Buy Now"} buttonColor={"bg-[#cf8e00]"} />
+          <Button 
+            buttonText={"Book Now"} 
+            buttonColor={"bg-[#cf8e00]"} 
+            isWhatsApp={true}
+            whatsappNumber="+8801813284367"
+            whatsappMessage={`Hello! I'm interested in booking the following Umrah package:
+
+📦 Package: ${title}
+
+💰 Pricing:
+${PriceWithFood ? `• With Food: ${PriceWithFood}` : ''}
+${PriceWithOutFood ? `• Without Food: ${PriceWithOutFood}` : ''}
+
+📅 Package Details:
+${Package_1 ? `• Package 1: ${Package_1}` : ''}
+${Package_2 ? `• Package 2: ${Package_2}` : ''}
+${Package_3 ? `• Package 3: ${Package_3}` : ''}
+${Package_4 ? `• Package 4: ${Package_4}` : ''}
+${Package_5 ? `• Package 5: ${Package_5}` : ''}
+
+🏨 Accommodation:
+${makkahHotel ? `• Makkah Hotel: ${makkahHotel}` : ''}
+${HotelMadinah ? `• Madinah Hotel: ${HotelMadinah}` : ''}
+
+✈️ Flight Information:
+${FliteUp ? `• Departure Flight: ${FliteUp}` : ''}
+${FlightDown ? `• Return Flight: ${FlightDown}` : ''}
+
+🍽️ Food: ${food ? food : 'Not specified'}
+
+⭐ Special Services: ${SpecialServices ? SpecialServices : 'Standard services'}
+
+Please provide me with more details about booking this package. Thank you!`}
+          />
         </div>
         }
       </div>
